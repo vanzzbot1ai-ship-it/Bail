@@ -48,8 +48,8 @@ thumbnail: await (await fetch("URL IMG")).buffer(),
 itemCount: 1000,
 status: "INQUIRY",
 surface: "CATALOG",
-message: "dfa kimochi",
-orderTitle: "kyah",
+message: "vanz kyutt",
+orderTitle: "allea",
 sellerJid: "0@s.whatsapp.net",
 token: Buffer.from("777777"),
 totalAmount1000: 1000,
@@ -70,8 +70,8 @@ name: "review_and_pay",
 buttonParamsJson: JSON.stringify({
 currency: "IDR",
 total_amount: { value: 100, offset: 100 },
-reference_id: "DAFFA-DEV",
-type: "daffa",
+reference_id: "VANZZ-GTG",
+type: "vanzz",
 payment_status: "ganteng",
 payment_timestamp: Date.now(),
 order: {
@@ -87,7 +87,7 @@ quantity: 1
 }
 ]
 },
-additional_note: "daffa gntng bet jir",
+additional_note: "vanzz kyutt bangett jir",
 native_payment_methods: "",
 share_payment_status: true
 })
@@ -102,7 +102,7 @@ share_payment_status: true
 ```javascript
 await client.sendMessage(groupId, {
 groupStatusMessage: {
-text: "hello world"
+text: "hallo om"
 }
 });
 ```
@@ -176,14 +176,14 @@ Membuat dan mengirim undangan event WhatsApp:
 await client.sendMessage(m.chat, {
 eventMessage: {
 isCanceled: false,
-name: "Hello World",
+name: "Hallo Om",
 description: "ravage native",
 location: {
 degreesLatitude: 0,
 degreesLongitude: 0,
-name: "rowrrrr"
+name: "awww"
 },
-joinLink: "https://call.whatsapp.com/video/daffadevv",
+joinLink: "https://call.whatsapp.com/video/vanzz",
 startTime: "1763019000",
 endTime: "1763026200",
 extraGuestsAllowed: false
@@ -218,9 +218,9 @@ Mengirim pesan interaktif dasar dengan tombol salin:
 ```javascript
 await client.sendMessage(m.chat, {
 interactiveMessage: {
-header: "Hello World",
-title: "Hello World",
-footer: "telegram: @daffadevv ",
+header: "Hallo Om",
+title: "Hallo Om",
+footer: "telegram: @VanzzBan ",
 buttons: [
 {
 name: "cta_copy",
@@ -243,13 +243,13 @@ await client.sendMessage(m.chat, {
 interactiveMessage: {
 header: "Hello World",
 title: "Hello World",
-footer: "telegram: @daffadevv",
+footer: "telegram: @VanzzBan",
 image: { url: "https://example.com/image.jpg" },
 nativeFlowMessage: {
 messageParamsJson: JSON.stringify({
 limited_time_offer: {
 text: "idk hummmm?",
-url: "https://t.me/daffadevv",
+url: "https://t.me/VanzzBan",
 copy_code: "ravage",
 expiration_time: Date.now() * 999
 },
@@ -262,7 +262,7 @@ button_title: "ravage native"
 tap_target_configuration: {
 title: " X ",
 description: "bomboclard",
-canonical_url: "https://t.me/daffadevv",
+canonical_url: "https://t.me/VanzzBan",
 domain: "shop.example.com",
 button_index: 0
 }
@@ -283,15 +283,15 @@ has_multiple_buttons: true
 {
 name: "single_select",
 buttonParamsJson: JSON.stringify({
-title: "Hello World",
+title: "Hallo Om",
 sections: [
 {
 title: "title",
 highlight_label: "label",
 rows: [
 {
-title: "@daffadevv",
-description: "love you",
+title: "@VanzzBan",
+description: "lop yu",
 id: "row_2"
 }
 ]
@@ -320,9 +320,9 @@ Mengirim pesan interaktif dengan thumbnail dan tombol salin:
 ```javascript
 await client.sendMessage(m.chat, {
 interactiveMessage: {
-header: "Hello World",
-title: "Hello World",
-footer: "telegram: @daffadevv",
+header: "Hallo Om",
+title: "Hallo Om",
+footer: "telegram: @VanzzBan",
 image: { url: "https://example.com/image.jpg" },
 buttons: [
 {
@@ -373,12 +373,12 @@ Mengirim pesan interaktif dengan dokumen dari buffer (file system) — **Catatan
 ```javascript
 await client.sendMessage(m.chat, {
 interactiveMessage: {
-header: "Hello World",
-title: "Hello World",
-footer: "telegram: @daffadevv",
+header: "Hallo Om",
+title: "Hallo Om",
+footer: "telegram: @VanzzBan",
 document: fs.readFileSync("./package.json"),
 mimetype: "application/pdf",
-fileName: "daffadevv.pdf",
+fileName: "allea.pdf",
 jpegThumbnail: fs.readFileSync("./document.jpeg"),
 contextInfo: {
 mentionedJid: [m.chat],
@@ -391,7 +391,7 @@ body: "",
 mediaType: 3,
 thumbnailUrl: "https://example.com/image.jpg",
 mediaUrl: " X ",
-sourceUrl: "https://t.me/daffadevv",
+sourceUrl: "https://t.me/VanzzBan",
 showAdAttribution: true,
 renderLargerThumbnail: false
 },
@@ -400,8 +400,8 @@ buttons: [
 name: "cta_url",
 buttonParamsJson: JSON.stringify({
 display_text: "Telegram",
-url: "https://t.me/daffadevv",
-merchant_url: "https://t.me/daffadevv"
+url: "https://t.me/VanzzBan",
+merchant_url: "https://t.me/VanzzBan"
 })
 }
 ]
@@ -415,20 +415,20 @@ Mengirim pesan interaktif dengan dokumen dari buffer tanpa contextInfo dan exter
 ```javascript
 await client.sendMessage(m.chat, {
 interactiveMessage: {
-header: "Hello World",
+header: "Hallo Om",
 title: "Hello World",
-footer: "telegram: @daffadevv",
+footer: "telegram: @VanzzBan",
 document: fs.readFileSync("./package.json"),
 mimetype: "application/pdf",
-fileName: "daffadevv.pdf",
+fileName: "allea.pdf",
 jpegThumbnail: fs.readFileSync("./document.jpeg"),
 buttons: [
 {
 name: "cta_url",
 buttonParamsJson: JSON.stringify({
 display_text: "Telegram",
-url: "https://t.me/daffadevv",
-merchant_url: "https://t.me/daffadevv"
+url: "https://t.me/VanzzBan",
+merchant_url: "https://t.me/VanzzBan"
 })
 }
 ]

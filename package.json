@@ -1,7 +1,7 @@
 {
-    "name": "@daffadevv/baileys",
+    "name": "vanzzleaa-baileys",
     "version": "3.0.0",
-    "description": "WhatsApp API Modification By Daffa",
+    "description": "WhatsApp API Modification By Vanzz",
     "keywords": [
         "whatsapp",
         "ravage",
@@ -10,14 +10,14 @@
         "whatsapp-chat",
         "whatsapp-group",
         "botwa",
-        "daffaa"
+        "vanzz"
     ],
-    "homepage": "https://www.npmjs.com/package/@daffadevv/baileys",
+    "homepage": "https://www.npmjs.com/package/vanzzleaa-baileys",
     "repository": {
-        "url": "https://www.npmjs.com/package/@daffadevv/baileys"
+        "url": "https://www.npmjs.com/package/vanzzleaa-baileys"
     },
     "license": "MIT",
-    "author": "Daffa",
+    "author": "Vanzz",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "files": [
